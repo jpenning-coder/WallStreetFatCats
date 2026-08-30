@@ -6,7 +6,7 @@ export const siteConfig = {
   description:
     "Institutional-grade stock analysis and disciplined investment strategies presented with clarity, transparency, and personality.",
   url:
-    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
     "https://wallstreetfatcats.com",
 } as const;
 
